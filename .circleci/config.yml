@@ -12,3 +12,5 @@ workflows:
     jobs:
       - welcome/run
 
+store_test_results:
+  -path: C:\Users\RetailAdmin\Music\circleci
