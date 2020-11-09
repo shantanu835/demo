@@ -1,16 +1,18 @@
 version: 2
 jobs:
-    build_and_save:
-        docker:
-        - image: circleci/golang:latest
-        steps:
-             upload-artifact:
-                docker:
-                    - image: circleci/golang:latest
-            - store_artifacts:
-                path: /bin/final_build
-workflows:
-    version: 2
-    main:
-        jobs:
-            - build_and_save
+  build:
+    working_directory: /tmp
+    steps:
+      - run:
+          name: Creating Dummy Artifacts
+          command: |
+            echo "my artifact file" > /tmp/artifact-1;
+            mkdir /tmp/artifacts;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-2;
+
+      - store_artifacts:
+          path: /tmp/artifact-1
+          destination: artifact-file
+
+      - store_artifacts:
+          path: /tmp/artifacts
