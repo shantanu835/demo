@@ -4,7 +4,7 @@ jobs:
         docker:
         - image: circleci/golang:latest
         steps:
-            upload-artifact:
+             upload-artifact:
                 docker:
                     - image: circleci/golang:latest
             - store_artifacts:
