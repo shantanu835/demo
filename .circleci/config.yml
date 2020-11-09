@@ -14,8 +14,8 @@ workflows:
 steps:
   - store_test_results:
       path: C:\Users\RetailAdmin\Music\circleci
-      destination: circleci
+      destination: circle
       
   - store_artifacts:
       path: C:\Users\RetailAdmin\Music\circleci
-      destination: circleci
+      destination: circle
