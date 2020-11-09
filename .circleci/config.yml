@@ -11,6 +11,5 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
-      - store_artifacts:
-          path: C:\Users\RetailAdmin\Music\circleci
-          destination: circleci-docs
+    store_test_results:
+      path: C:\Users\RetailAdmin\Music\circleci
