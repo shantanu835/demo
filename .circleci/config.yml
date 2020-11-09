@@ -3,7 +3,7 @@ jobs:
     build_and_save:
         docker:
         - image: circleci/hello-world:latest
-        - auth:
+        auth:
             username: shan3222
             password: shan@1234  # context / project UI env-var reference
         steps:
