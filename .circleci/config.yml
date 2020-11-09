@@ -5,7 +5,7 @@ jobs:
         - image: circleci/golang:latest
         steps:
             - checkout
-            - run: make build
+            - run: build
             - store_artifacts:
                 path: /bin/final_build
 workflows:
