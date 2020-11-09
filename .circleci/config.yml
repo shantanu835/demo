@@ -6,8 +6,8 @@ jobs:
         steps:
             - checkout
             upload-artifact:
-            docker:
-                - image: circleci/golang:latest
+                docker:
+                    - image: circleci/golang:latest
             - store_artifacts:
                 path: /bin/final_build
 workflows:
