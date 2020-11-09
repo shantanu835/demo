@@ -2,7 +2,7 @@ version: 2
 jobs:
     build_and_save:
         docker:
-        - image: circleci/golang:latest
+        - image: hello-world:latest
         steps:
             - checkout
             - run: make build
