@@ -15,6 +15,6 @@ steps:
   - store_test_results:
       path: C:\Users\RetailAdmin\Music\circleci
       
-   - store_artifacts:
+  - store_artifacts:
       path: C:\Users\RetailAdmin\Music\circleci
       destination: circleci
