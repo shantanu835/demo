@@ -12,13 +12,13 @@ commands:
     description: "Run RSpec"
     steps:
       - run:
-          command: bundle exec rspec
+          command: bundle exec rspec --format progress --format RspecJunitFormatter -o ~/test-results/rspec/rspec.xml
           when: always
   cucumber:
     description: "Run cucumber"
     steps:
       - run:
-          command: bundle exec cucumber
+          command: bundle exec cucumber -f pretty -f junit -o ~/test-results/cucumber/cucumber.xml
           when: always
 jobs:
   test:
