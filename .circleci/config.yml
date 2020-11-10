@@ -3,17 +3,17 @@ jobs:
   build:
     machine:
       image: ubuntu-2004:202010-01
-#     working_directory: /tmp
+    working_directory: /tmp
     steps:
       - run:
           name: run tests
           command: |
             . venv/bin/activate
-            mkdir test-results
-            pytest --junitxml=test-results/junit.xml
+            mkdir /tmp/artifacts
+            pytest --junitxml=/tmp/artifacts/junit.xml
 
       - store_test_results:
-          path: test-results
+          path: /tmp/artifacts
 
       - store_artifacts:
-          path: test-results
+          path: /tmp/artifacts
