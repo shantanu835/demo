@@ -18,5 +18,5 @@ jobs:
       - store_artifacts:
           path: /tmp/artifacts
          
-      - strore_test_results:
+      - store_test_results:
           path: /tmp/artifact-2
