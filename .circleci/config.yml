@@ -8,7 +8,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
+            /tmp/artifacts
             mkdir /tmp/artifacts
             pytest --junitxml=/tmp/artifacts/junit.xml
 
