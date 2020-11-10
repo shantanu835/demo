@@ -3,20 +3,17 @@ jobs:
   build:
     machine:
       image: ubuntu-2004:202010-01
-    working_directory: /tmp
+#     working_directory: /tmp
     steps:
       - run:
-          name: Creating Dummy Artifacts
+          name: run tests
           command: |
-            echo "my artifact file" > /tmp/artifact-1;
-            mkdir /tmp/artifacts;
-            echo "my artifact files in a dir" > /tmp/artifacts/artifact-2;
-      - store_artifacts:
-          path: /tmp/artifact-1
-          destination: artifact-file
+            . venv/bin/activate
+            mkdir test-results
+            pytest --junitxml=test-results/junit.xml
+
+      - store_test_results:
+          path: test-results
 
       - store_artifacts:
-          path: /tmp/artifacts
-      
-      - store_test_results:
-          path: /tmp/artifact-2
+          path: test-results
