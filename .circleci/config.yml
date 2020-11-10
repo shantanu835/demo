@@ -1,15 +1,15 @@
-version: 2.1
-orbs:
-    hello: circleci/hello-build@0.0.5
-        workflows:
-            "Hello Workflow":
-        jobs:
-          - hello/hello-build
-        working_directory: /tmp
+version: 2
+jobs:
+  build:
+    machine:
+      image: ubuntu-2004:202010-01
+    working_directory: /tmp
     steps:
-        - run:
-            command: |
-                echo Running test
+         steps:
+      - run:
+          name: Creating Dummy Artifacts
+          command: |
+             echo Running test
                 mkdir -p /tmp/test-results
                 make test
 
