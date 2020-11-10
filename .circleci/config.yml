@@ -1,17 +1,17 @@
 version: 2.1
 orbs:
     hello: circleci/hello-build@0.0.5
-workflows:
-    "Hello Workflow":
+        workflows:
+            "Hello Workflow":
         jobs:
           - hello/hello-build
-    working_directory: /tmp
+        working_directory: /tmp
     steps:
-      - run:
-          command: |
-            echo Running test
-            mkdir -p /tmp/test-results
-            make test
+        - run:
+            command: |
+                echo Running test
+                mkdir -p /tmp/test-results
+                make test
 
       - store_test_results:
           path: /tmp/test-results
