@@ -8,10 +8,10 @@ jobs:
       - run:
           name: Save test results
           command: |
-            mkdir -p ~/cucumber
-            bundle exec cucumber --format pretty --format json --out ~/cucumber/tests.cucumber
+            echo "my artifact file" > /tmp/artifact-1;
+            mkdir /tmp/artifacts;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-2
           when: always
       - store_test_results:
-          path: ~/cucumber
-      - store_artifacts:
-          path: ~/cucumber
+          path: /tmp/artifact-1
+     
