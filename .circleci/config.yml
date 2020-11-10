@@ -4,7 +4,7 @@ jobs:
     machine:
       image: ubuntu-2004:202010-01
     working_directory: /tmp
-       steps:
+    steps:
       - run:
           name: Creating Dummy Artifacts
           command: |
@@ -17,6 +17,6 @@ jobs:
 
       - store_artifacts:
           path: /tmp/artifacts
-         
+      
       - store_test_results:
           path: /tmp/artifact-2
