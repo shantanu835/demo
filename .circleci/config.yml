@@ -10,8 +10,10 @@ jobs:
           command: |
             echo "my artifact file" > /tmp/artifact-1;
             mkdir /tmp/artifacts;
-            echo "my artifact files in a dir" > /tmp/artifacts/artifact-2;
-            echo "my artifact files in a dir and some extra data" > /tmp/artifacts/artifact-2;
+            echo "my artifact files in a dir
+            skjdnfksdjfnksdfj" > /tmp/artifacts/artifact-2;
+            echo "my artifact files in a dir and some extra data" > /tmp/artifacts/artifact-3;
+           
             
       
       - store_artifacts:
@@ -19,6 +21,6 @@ jobs:
       
       - store_artifacts:
           path: /tmp/artifacts/artifact-2
-#       - store_artifacts:
-#           path: /tmp/artifacts/artifact-3
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-3
       
