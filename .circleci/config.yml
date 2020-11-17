@@ -8,12 +8,12 @@ jobs:
       - run:
           name: Creating Dummy Artifacts
           command: |
-             echo Running test
-                mkdir -p /tmp/test-results
-                make test
-
+            echo "my artifact file" > /tmp/artifact-1;
+            mkdir /tmp/artifacts;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-2;
+      
       - store_test_results:
-          path: /tmp/test-results
+          path: /tmp/artifact-1
 
       - store_artifacts:
           path: /tmp/artifacts
