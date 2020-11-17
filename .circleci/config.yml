@@ -45,6 +45,62 @@ jobs:
       
       - store_artifacts:
           path: /tmp/artifacts/artifact-2
+      - store_artifacts:
           path: /tmp/artifacts/artifact-3
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-4
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-5
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-6
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-7
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-8
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-9
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-10
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-11
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-12
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-13
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-14
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-15
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-16
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-17
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-18
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-19
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-20
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-21
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-22
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-23
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-24
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-25
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-26
+      
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-27
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-28
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-29
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-30
       
 
