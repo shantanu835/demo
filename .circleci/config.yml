@@ -16,4 +16,4 @@ jobs:
           path: /tmp/artifact-1
 
       - store_artifacts:
-          path: /tmp/artifacts
+          path: /tmp/artifacts/artifact-2
