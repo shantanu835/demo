@@ -12,7 +12,7 @@ jobs:
             mkdir /tmp/artifacts;
             echo "my artifact files in a dir" > /tmp/artifacts/artifact-2;
       
-      - store_test_results:
+      - store_artifacts:
           path: /tmp/artifact-1
 
       - store_artifacts:
