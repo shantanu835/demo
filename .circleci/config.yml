@@ -12,12 +12,39 @@ jobs:
             mkdir /tmp/artifacts;
             echo "my artifact files in a dir" > /tmp/artifacts/artifact-2;
             echo "my artifact files in a dir" > /tmp/artifacts/artifact-3;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-4;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-5;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-6;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-7;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-8;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-9;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-10;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-11;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-12;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-13;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-14;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-15;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-16;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-17;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-18;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-19;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-20;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-21;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-22;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-23;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-24;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-25;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-26;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-27;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-28;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-29;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-30;
       
       - store_artifacts:
           path: /tmp/artifact-1
       
       - store_artifacts:
-          path: /tmp/artifacts/artifact-3
-
-      - store_artifacts:
           path: /tmp/artifacts/artifact-2
+          path: /tmp/artifacts/artifact-3
+      
+
